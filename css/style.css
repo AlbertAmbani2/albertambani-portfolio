@@ -65,7 +65,7 @@ header {
         left: 0%;
     }
     body {
-        padding: 0;
+        padding: 0 ;
     }
 } 
 
@@ -147,7 +147,7 @@ header {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15rem;
+    padding: 0 5rem;
 }
 
 .home h3 {
@@ -193,7 +193,7 @@ header {
     margin: 0 6rem;
     font-size: 3rem;
     padding: 1rem;
-    border-bottom: 0.5rem solid #fff4;
+    border-bottom: 0.3rem solid #fff4;
     color: #fff;
 }
 .heading span{
@@ -267,10 +267,9 @@ header {
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
-    border-left: .5rem solid #fff;
+    border-left: .3rem solid #fff4;
     position: relative;
     
-
 }
 
 .education .box-container .box span{
@@ -278,7 +277,7 @@ header {
     background: #222;
     color: #fff;
     border-radius: 5rem;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2.5rem;
 
 }
 
@@ -294,7 +293,7 @@ header {
     padding-top: 1rem 0;
 }
 
-.education .box-container .box i{
+.education .box-container .box svg{
     position: absolute;
     top: -1.5rem;left: -2.5rem;
     height: 5rem;
@@ -304,6 +303,7 @@ header {
     font-size: 2rem;
     border-radius: 50%;
     color: #fff;
+    background: rgb(210, 210, 20);
 }
 
 .portfolio .box-container{
@@ -392,9 +392,9 @@ header {
 
 }
 
-.contact .row .content .info h3 i{
+.contact .row .content .info h3 svg{
     padding-right: 1rem;
-    color: #efdf34;
+    color: #aaa;
 }
 
 
