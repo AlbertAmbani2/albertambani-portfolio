@@ -129,7 +129,7 @@ header {
 }
 
 .menu-bar .navbar ul li a:hover {
-    background: #bbb;
+    background: #292925;
 }
 
 .menu {
@@ -185,7 +185,7 @@ header {
 }
 
 .btn:hover {
-    background: #ccc;
+    background: #292925;
 }
 
 .heading { 
@@ -358,7 +358,7 @@ header {
     color: #eee;
     padding: 1rem 0;
     font-weight: normal;
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 .contact .row form{
