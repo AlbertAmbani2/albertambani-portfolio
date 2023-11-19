@@ -80,6 +80,7 @@ header {
     header{
         width: 100vh;
     }
+    
 }
 
 
@@ -148,6 +149,7 @@ header {
     justify-content: center;
     flex-flow: column;
     padding: 0 5rem;
+    animation: slideIn 1s both;
 }
 
 .home h3 {
@@ -206,6 +208,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 0;
+    animation: slideIn 1s both;
 }
 
 .about .row .info{
@@ -220,7 +223,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
-    padding-right: 6rem;
+    
 }
 
 .about .row .info h3 {
@@ -261,6 +264,7 @@ header {
     flex-wrap: wrap;
     padding: 1rem 0;
     padding-left: 3rem;
+    animation: slideIn 1s both;
 }
 
 .education .box-container .box{
@@ -312,7 +316,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
-    
+    animation: slideIn 1s both;
 }
 
 .portfolio .box-container .box{
@@ -340,19 +344,18 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
+    animation: slideIn 1s both;
 }
 
 .contact .row .content{
     flex: 1 1 30rem;
     padding: 2rem;
-    margin: 2rem;
-    margin-bottom: 0;
-    
+    margin: 1em;
+    margin-bottom: 1rem;
 }
 
 .contact .row .content .info h3{
-    display: flex;
+    display: inline-block;
     align-items: center;
     font-size: 2rem;
     color: #eee;
@@ -361,11 +364,18 @@ header {
     text-transform: none;
 }
 
+a.highlight-fade:hover {
+    background-color: #efdf34;
+    color: #fff;
+    opacity: 0.8;
+}
+
+
 .contact .row form{
     flex: 1 1 45rem;
     padding: 2rem;
     margin: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 
 .contact .row form .box{
@@ -389,17 +399,24 @@ header {
     font-size: 3rem;
     padding-bottom: 2rem;
     font-weight: normal;
-
 }
 
 .contact .row .content .info h3 svg{
     padding-right: 1rem;
     color: #aaa;
+    margin-left: 1rem;
 }
 
 
+/* Animation   */
 
-
-
-
-
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
