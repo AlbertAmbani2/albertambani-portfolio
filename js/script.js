@@ -45,6 +45,16 @@ function smoothScroll(e) {
   }
 }
 
+//function to update age
+function updateAge() {
+  const birthYear = 1999;
+  const currentYear = new Date().getFullYear();
+  const age = currentYear - birthYear;
+
+  document.getElementById("age").innerHTML += age;
+}
+updateAge();
+
 //function to send e-email
 function sendEmail() {
   sendEmail.send({
