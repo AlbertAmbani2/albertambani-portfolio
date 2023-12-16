@@ -83,7 +83,6 @@ header {
     
 }
 
-
 .menu-bar .image-section img {
     width: 220px;
     height: 220px;
@@ -152,23 +151,48 @@ header {
     animation: slideIn 1s both;
 }
 
-.home h3 {
+.home .content{
+    padding: 2rem;
+    margin: 1em;
+    margin-bottom: 1rem;
+}
+.home .content h3 {
     font-size: 2rem;
     color: #fff;
 }
 
-.home h1 {
+.home .content h1 {
     font-size:5rem;
     color: #fff;
 }
-.home span{
+.home .content span{
     color: #efdf34;
 }
 
-.home p {
+.home .content p {
     font-size:2rem;
-    color: #eee;
+    color:  #74ce46;
     padding: 1rem 0;
+}
+
+.home .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    font-weight: normal;
+}
+
+.home .content .info h3{
+    display: inline-block;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.home .content .info h3 svg{
+    padding-right: 1rem;
+    color: #aaa;
+    margin-left: 1rem;
 }
 
 .btn {
@@ -340,36 +364,10 @@ header {
 }
 
 .contact .row{
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     animation: slideIn 1s both;
 }
-
-.contact .row .content{
-    flex: 1 1 30rem;
-    padding: 2rem;
-    margin: 1em;
-    margin-bottom: 1rem;
-}
-
-.contact .row .content .info h3{
-    display: inline-block;
-    align-items: center;
-    font-size: 2rem;
-    color: #eee;
-    padding: 1rem 0;
-    font-weight: normal;
-    text-transform: none;
-}
-
-a.highlight-fade:hover {
-    background-color: #efdf34;
-    color: #fff;
-    opacity: 0.8;
-}
-
 
 .contact .row form{
     flex: 1 1 45rem;
@@ -392,21 +390,6 @@ a.highlight-fade:hover {
     height: 15rem;
     resize: none;
 }
-
-.contact .row .content .title{
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 3rem;
-    padding-bottom: 2rem;
-    font-weight: normal;
-}
-
-.contact .row .content .info h3 svg{
-    padding-right: 1rem;
-    color: #aaa;
-    margin-left: 1rem;
-}
-
 
 /* Animation   */
 
