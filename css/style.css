@@ -36,42 +36,41 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
-    transition: left 0.3s ease-in-out; 
-    
+    transition: left 0.4s ease-in-out;
+
 }
- 
+
 /* media queries */
 
 @media(max-width:1200px) {
     html {
         font-size: 55%;
     }
-    .home {
+    #home {
         padding: 1rem 4rem;
-    }    
+    }
 }
-
 
 @media(max-width:990px) {
     header {
         left: -120%;
     }
-    
+
    svg.menu {
         display: block;
     }
-    
+
     header.header-visible{
         left: 0%;
     }
     body {
         padding: 0 ;
     }
-} 
+}
 
 @media(max-width:768px) {
     html {
-        font-size: 75%;
+        font-size: 55%;
     }
 }
 
@@ -80,7 +79,12 @@ header {
     header {
         width: 90%;
     }
-    
+    body {
+        padding: 1rem 0 ;
+        
+    }
+
+
 }
 
 .menu-bar .image-section img {
@@ -89,7 +93,7 @@ header {
     border-radius: 75%;
     object-fit: cover;
     margin-top: 20px;
-     
+
 }
 
 .menu-bar .image-section .name {
@@ -100,7 +104,7 @@ header {
 
 .menu-bar .image-section .post {
     font-size: 16px;
-   
+
 }
 
 .menu-bar .navbar {
@@ -112,7 +116,7 @@ header {
     padding: 10px 10px;
     list-style: none;
 }
- 
+
 .menu-bar .navbar ul li{
     margin: 20px;
 }
@@ -125,7 +129,7 @@ header {
     background-color: #333;
     font-size: 15px;
     border-radius: 30px;
-    
+
 }
 
 .menu-bar .navbar ul li a:hover {
@@ -143,39 +147,39 @@ header {
     cursor: pointer;
 }
 
-.home {
+#home {
     display: flex;
     justify-content: center;
     flex-flow: column;
     padding: 0 5rem;
-    animation: slideIn 1s both;
+    animation: slideIn 3s both;
 }
 
-.home .content{
+#home .content{
     padding: 2rem;
     margin: 1em;
     margin-bottom: 1rem;
 }
-.home .content h3 {
+#home .content h3 {
     font-size: 2rem;
     color: #fff;
 }
 
-.home .content h1 {
+#home .content h1 {
     font-size:5rem;
     color: #fff;
 }
-.home .content span{
+#home .content span{
     color: #efdf34;
 }
 
-.home .content p {
+#home .content p {
     font-size:2rem;
     color:  #74ce46;
     padding: 1rem 0;
 }
 
-.home .content .title{
+#home .content .title{
     text-transform: uppercase;
     color: #fff;
     font-size: 3rem;
@@ -183,13 +187,13 @@ header {
     font-weight: normal;
 }
 
-.home .content .info h3{
+#home .content .info a{
     display: inline-block;
     align-items: center;
     padding: 1rem 0;
 }
 
-.home .content .info h3 svg{
+#home .content .info a svg{
     padding-right: 1rem;
     color: #aaa;
     margin-left: 1rem;
@@ -214,7 +218,7 @@ header {
     background: #292925;
 }
 
-.heading { 
+.heading {
     text-align: center;
     margin: 0 6rem;
     font-size: 3rem;
@@ -232,11 +236,11 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 0;
-    animation: slideIn 1s both;
+    animation: slideIn 3s both;
 }
 
 .about .row .info{
-    
+
     flex: 1 1 48rem;
     padding: 2rem 1rem;
     padding-left: 6rem;
@@ -246,8 +250,8 @@ header {
     flex: 1 1 48rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
-    
+    flex-wrap: wrap;
+
 }
 
 .about .row .info h3 {
@@ -288,7 +292,7 @@ header {
     flex-wrap: wrap;
     padding: 1rem 0;
     padding-left: 3rem;
-    animation: slideIn 1s both;
+    animation: slideIn 3s both;
 }
 
 .education .box-container .box{
@@ -297,7 +301,7 @@ header {
     padding-left: 4rem;
     border-left: .3rem solid #fff4;
     position: relative;
-    
+
 }
 
 .education .box-container .box span{
@@ -340,7 +344,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
-    animation: slideIn 1s both;
+    animation: slideIn 3s both;
 }
 
 .portfolio .box-container .box{
@@ -350,7 +354,7 @@ header {
     margin: 2rem;
     overflow: hidden;
     cursor: pointer;
-   
+
 }
 
 .portfolio .box-container .box img{
@@ -363,32 +367,36 @@ header {
     transform: scale(1.2);
 }
 
-.contact .row{
+.contact form{
+    width: 100%;
+    padding: 2rem;
     align-items: center;
     justify-content: center;
-    animation: slideIn 1s both;
+    animation: slideIn 3s both;
 }
 
-.contact .row form{
+/*.contact form{
     flex: 1 1 45rem;
     padding: 2rem;
     margin: 2rem;
     margin-top: 1rem;
-}
+}*/
 
-.contact .row form .box{
+.contact form .box{
     padding: 1.5rem;
     margin: 1rem 0;
     background: #4a4949;
     color: #fff;
-    text-transform: none;
     font-size: 1.7rem;
     width: 100%;
+   
 }
 
-.contact .row form .message{
+.contact form .message{
     height: 15rem;
-    resize: none;
+}
+.contact form button{
+    display: flex;
 }
 
 /* Animation   */
@@ -401,5 +409,14 @@ header {
     100% {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
     }
 }
