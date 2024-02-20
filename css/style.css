@@ -4,7 +4,16 @@
     box-sizing: border-box;
     text-decoration: none; list-style: none;
     outline: none; border: none;
-    transition: all .2s linear;
+
+  /* prevent tap highlight color / shadow */
+    user-select: none;
+
+    /* prevent webkit from resizing text to fit */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;
+    
 }
 html{
     font-size: 62.5%;
@@ -36,7 +45,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
-    transition: left 0.4s ease-in-out;
+    
 
 }
 
@@ -398,24 +407,3 @@ header {
     display: flex;
 }
 
-/* Animation   */
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}

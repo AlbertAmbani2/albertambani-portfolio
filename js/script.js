@@ -20,6 +20,9 @@ document.body.addEventListener('click', function (event) {
 
   });
 
+        // Start typing when the window loads
+        window.onload = type;
+
  // Add a click event listener to the navigation links
 document.querySelectorAll('.navbar a').forEach(link => {
   link.addEventListener('click', smoothScroll);

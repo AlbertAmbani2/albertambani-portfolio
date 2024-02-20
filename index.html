@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal webpage</title>
+
+    <!-- aos library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- typed.js lib -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
@@ -39,16 +46,16 @@
     
    <!--home section-->
    <section id="home">
-    <div class="content">
+    <div class="content" data-aos="zoom-in">
     <h3>HI THERE 👋!</h3>
     <h1>I'M <span>Albert Ambani</span> </h1>
     <p>A Software Developer👩‍💻,<br>
         An Artificial Intelligence, &<br>
         Machine Learning Engineer
-</p>
+    </p>
 
     <h3 class="title">let's connect here</h3>
-    <div class="info">
+    <div class="info" data-aos="fade-in">
 
         <!--G-mail -->
        
@@ -93,7 +100,7 @@
    <!--about section-->
    <section class="about" id="about">
     <h1 class="heading"> <span> about </span> me </h1>
-    <div class="row">
+    <div class="row" data-aos="fade-up">
         <div class="info">
             <h3> <span> name : </span>albert ambani</h3>
             <h3 id="age"><span> age : </span></h3>
@@ -109,22 +116,22 @@
 
     <div class="counter">
 
-        <div class="box">
+        <div class="box" data-aos="fade-right">
             <span>5+</span>
             <h3>years of experience</h3>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-right">
             <span>20+</span>
             <h3>projects completed</h3>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-left">
             <span>50+</span>
             <h3>happy clients</h3>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-left">
             <span>10+</span>
             <h3>awards won</h3>
     
@@ -138,7 +145,7 @@
    <section class="education" id="education">
     <h1 class="heading"> <span> my </span> education </h1>
     <div class="box-container">
-		<div class="box">
+		<div class="box" data-aos="zoom-in">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1582 1065q41 72 61 150t21 161v103l-640 321l-640-321q0-60 1-112t9-101t24-98t48-103L256 960v587q29 10 52 28t41 42t26 52t9 59v320H0v-320q0-30 9-58t26-53t40-42t53-28V896L0 832l1024-512l1024 512l-466 233zM256 1728q0-26-19-45t-45-19q-26 0-45 19t-19 45v192h128v-192zm30-896l738 369l738-369l-738-369l-738 369zm1250 568q0-77-15-143t-53-135l-444 222l-444-222q-33 58-50 122t-18 132v24l512 256l512-256z"/> </svg>
             <span>2024</span>
             <h3>Certificate of Participation (UNITAR)</h3>
@@ -148,7 +155,7 @@
             </p>
         </div>
 		
-	   <div class="box">
+	   <div class="box" data-aos="fade-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1582 1065q41 72 61 150t21 161v103l-640 321l-640-321q0-60 1-112t9-101t24-98t48-103L256 960v587q29 10 52 28t41 42t26 52t9 59v320H0v-320q0-30 9-58t26-53t40-42t53-28V896L0 832l1024-512l1024 512l-466 233zM256 1728q0-26-19-45t-45-19q-26 0-45 19t-19 45v192h128v-192zm30-896l738 369l738-369l-738-369l-738 369zm1250 568q0-77-15-143t-53-135l-444 222l-444-222q-33 58-50 122t-18 132v24l512 256l512-256z"/> </svg>
             <span>2023</span>
             <h3>UNITAR Foundational Training Plan Phase I</h3>
@@ -159,7 +166,7 @@
             </p>
         </div>
 		
-		<div class="box">
+		<div class="box" data-aos="fade-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1582 1065q41 72 61 150t21 161v103l-640 321l-640-321q0-60 1-112t9-101t24-98t48-103L256 960v587q29 10 52 28t41 42t26 52t9 59v320H0v-320q0-30 9-58t26-53t40-42t53-28V896L0 832l1024-512l1024 512l-466 233zM256 1728q0-26-19-45t-45-19q-26 0-45 19t-19 45v192h128v-192zm30-896l738 369l738-369l-738-369l-738 369zm1250 568q0-77-15-143t-53-135l-444 222l-444-222q-33 58-50 122t-18 132v24l512 256l512-256z"/> </svg>
             <span>2023</span>
             <h3>BSc. Computer Science</h3>
@@ -167,7 +174,7 @@
                 Graduated with a BSc. Computer Science
             </p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 2040 2040"><path fill="currentColor" d="M1582 1065q41 72 61 150t21 161v103l-640 321l-640-321q0-60 1-112t9-101t24-98t48-103L256 960v587q29 10 52 28t41 42t26 52t9 59v320H0v-320q0-30 9-58t26-53t40-42t53-28V896L0 832l1024-512l1024 512l-466 233zM256 1728q0-26-19-45t-45-19q-26 0-45 19t-19 45v192h128v-192zm30-896l738 369l738-369l-738-369l-738 369zm1250 568q0-77-15-143t-53-135l-444 222l-444-222q-33 58-50 122t-18 132v24l512 256l512-256z"/> </svg>
             <span>2023</span>
             <h3>AI Fundamentals certification</h3>
@@ -186,10 +193,10 @@
    <section class="portfolio" id="portfolio">
     <h1 class="heading"> <span> my </span> portfolio </h1>
     <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <img src="images/IMG_2.jpg" alt="prj1">
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-right">
             <img src="images/IMG_3.jpg" alt="prj2">
         </div>
     </div>
@@ -203,7 +210,9 @@
 
     
 
-        <form id="contact-form" onsubmit="sendEmail(); reset(); return false; ">
+        <form data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" id="contact-form" onsubmit="sendEmail(); reset(); return false; ">
 
             <input type="text" placeholder="name" class="box"> 
             <input id="email" type="text" placeholder="email" class="box">
@@ -215,8 +224,17 @@
 
   </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <script src="js/script.js "></script>
+
+    <script>
+        AOS.init({
+            duration: 800, //period animation takes in milliseconds
+            once: true 
+        });
+      </script>
 </body>
 </html>
