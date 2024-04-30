@@ -93,6 +93,10 @@ header {
         
     }
 
+    .blogs .box-container .box {
+        max-width: 300px;
+        margin: 20px 0px;
+      }
 }
 
 .menu-bar .image-section img {
@@ -346,7 +350,7 @@ header {
     background: rgb(210, 210, 20);
 }
 
-.portfolio .box-container{
+.blogs .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,24 +359,37 @@ header {
     animation: slideIn 3s both;
 }
 
-.portfolio .box-container .box{
-    height: 20rem;
-    width: 26rem;
-    border-radius: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    cursor: pointer;
-
+.blogs .box-container .box{
+  max-width: 330px;
+  padding: 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 15px;
+  margin: 20px 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.2s;
 }
 
-.portfolio .box-container .box img{
+.blogs .box-container .box a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+
+.blogs .box-container .box .image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.portfolio .box-container .box:hover img{
-    transform: scale(1.2);
+.blogs .box-container .box a .desc h2{
+    color: #616161;
+    text-align: center;
+    padding: 20px 0px 5px 0px;
 }
 
 .contact form{
