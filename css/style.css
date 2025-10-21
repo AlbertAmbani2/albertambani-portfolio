@@ -1,27 +1,31 @@
 /* google fonts */
-*{
-    margin: 0; padding: 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none; list-style: none;
-    outline: none; border: none;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
 
-  /* prevent tap highlight color / shadow */
+    /* prevent tap highlight color / shadow */
     user-select: none;
 
     /* prevent webkit from resizing text to fit */
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-  /* prevent callout to copy image, etc when tap to hold */
-  -webkit-text-size-adjust: none;
-    
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+
 }
-html{
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #313131;
     overflow-x: hidden;
@@ -35,7 +39,8 @@ section {
 
 header {
     position: fixed;
-    top:0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 1000;
     height: 100%;
     width: 300px;
@@ -45,7 +50,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
-    
+
 
 }
 
@@ -55,6 +60,7 @@ header {
     html {
         font-size: 55%;
     }
+
     #home {
         padding: 1rem 4rem;
     }
@@ -65,15 +71,16 @@ header {
         left: -120%;
     }
 
-   svg.menu {
+    svg.menu {
         display: block;
     }
 
-    header.header-visible{
+    header.header-visible {
         left: 0%;
     }
+
     body {
-        padding: 0 ;
+        padding: 0;
     }
 }
 
@@ -88,15 +95,16 @@ header {
     header {
         width: 90%;
     }
+
     body {
-        padding: 1rem 0 ;
-        
+        padding: 1rem 0;
+
     }
 
     .blogs .box-container .box {
         max-width: 300px;
         margin: 20px 0px;
-      }
+    }
 }
 
 .menu-bar .image-section img {
@@ -129,11 +137,11 @@ header {
     list-style: none;
 }
 
-.menu-bar .navbar ul li{
+.menu-bar .navbar ul li {
     margin: 20px;
 }
 
-.menu-bar .navbar ul li a{
+.menu-bar .navbar ul li a {
     color: #fff;
     display: block;
     padding: 10px;
@@ -154,7 +162,7 @@ header {
     position: fixed;
     top: 20px;
     right: 2px;
-    fill:#fff;
+    fill: #fff;
     line-height: 80px;
     cursor: pointer;
 }
@@ -167,31 +175,33 @@ header {
     animation: slideIn 3s both;
 }
 
-#home .content{
+#home .content {
     padding: 2rem;
     margin: 1em;
     margin-bottom: 1rem;
 }
+
 #home .content h3 {
     font-size: 2rem;
     color: #fff;
 }
 
 #home .content h1 {
-    font-size:5rem;
+    font-size: 5rem;
     color: #fff;
 }
-#home .content span{
+
+#home .content span {
     color: #efdf34;
 }
 
 #home .content p {
-    font-size:2rem;
-    color:  #74ce46;
+    font-size: 2rem;
+    color: #74ce46;
     padding: 1rem 0;
 }
 
-#home .content .title{
+#home .content .title {
     text-transform: uppercase;
     color: #fff;
     font-size: 3rem;
@@ -199,13 +209,13 @@ header {
     font-weight: normal;
 }
 
-#home .content .info a{
+#home .content .info a {
     display: inline-block;
     align-items: center;
     padding: 1rem 0;
 }
 
-#home .content .info a svg{
+#home .content .info a svg {
     padding-right: 1rem;
     color: #aaa;
     margin-left: 1rem;
@@ -238,11 +248,12 @@ header {
     border-bottom: 0.3rem solid #fff4;
     color: #fff;
 }
-.heading span{
+
+.heading span {
     color: #efdf34;
 }
 
-.about .row{
+.about .row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,14 +262,14 @@ header {
     animation: slideIn 3s both;
 }
 
-.about .row .info{
+.about .row .info {
 
     flex: 1 1 48rem;
     padding: 2rem 1rem;
     padding-left: 6rem;
 }
 
-.about .row .counter{
+.about .row .counter {
     flex: 1 1 48rem;
     display: flex;
     justify-content: center;
@@ -273,31 +284,32 @@ header {
     font-weight: normal;
 
 }
-.about .row .info h3 span{
+
+.about .row .info h3 span {
     color: #fff;
     padding: 0 .5rem;
 
 }
 
-.about .row .counter .box{
+.about .row .counter .box {
     width: 20rem;
-    background:#4a4949;
+    background: #4a4949;
     text-align: center;
     padding: 2rem;
     margin: 2rem;
 }
 
-.about .row .counter .box span{
+.about .row .counter .box span {
     font-size: 4rem;
     color: #efdf34;
 }
 
-.about .row .counter .box h3{
+.about .row .counter .box h3 {
     font-size: 2rem;
     color: #fff;
 }
 
-.education .box-container{
+.education .box-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -307,7 +319,7 @@ header {
     animation: slideIn 3s both;
 }
 
-.education .box-container .box{
+.education .box-container .box {
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
@@ -316,7 +328,7 @@ header {
 
 }
 
-.education .box-container .box span{
+.education .box-container .box span {
     font-size: 1.3rem;
     background: #222;
     color: #fff;
@@ -325,21 +337,22 @@ header {
 
 }
 
-.education .box-container .box h3{
+.education .box-container .box h3 {
     font-size: 2rem;
     color: #fff;
     padding-top: 1.5rem;
 }
 
-.education .box-container .box p{
+.education .box-container .box p {
     font-size: 1.4rem;
     color: #eee;
     padding-top: 1rem 0;
 }
 
-.education .box-container .box svg{
+.education .box-container .box svg {
     position: absolute;
-    top: -1.5rem;left: -2.5rem;
+    top: -1.5rem;
+    left: -2.5rem;
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
@@ -350,7 +363,7 @@ header {
     background: rgb(210, 210, 20);
 }
 
-.blogs .box-container{
+.blogs .box-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,17 +372,17 @@ header {
     animation: slideIn 3s both;
 }
 
-.blogs .box-container .box{
-  max-width: 330px;
-  padding: 20px;
-  border: 1px solid #bdbdbd;
-  border-radius: 15px;
-  margin: 20px 20px;
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: box-shadow 0.2s;
+.blogs .box-container .box {
+    max-width: 330px;
+    padding: 20px;
+    border: 1px solid #bdbdbd;
+    border-radius: 15px;
+    margin: 20px 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s;
 }
 
 .blogs .box-container .box a {
@@ -377,22 +390,22 @@ header {
     flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
-  }
+}
 
 
-.blogs .box-container .box .image img{
+.blogs .box-container .box .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.blogs .box-container .box a .desc h2{
+.blogs .box-container .box a .desc h2 {
     color: #616161;
     text-align: center;
     padding: 20px 0px 5px 0px;
 }
 
-.contact form{
+.contact form {
     width: 100%;
     padding: 2rem;
     align-items: center;
@@ -407,20 +420,98 @@ header {
     margin-top: 1rem;
 }*/
 
-.contact form .box{
+.contact form .box {
     padding: 1.5rem;
     margin: 1rem 0;
     background: #4a4949;
     color: #fff;
     font-size: 1.7rem;
     width: 100%;
-   
+
 }
 
-.contact form .message{
+.contact form .message {
     height: 15rem;
 }
-.contact form button{
+
+.contact form button {
     display: flex;
 }
 
+
+/* project section */
+/* .projects {
+    padding: 2rem 9%;
+    background: #111;
+} */
+
+.projects .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.projects .box {
+    background: #222;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px 20px;
+}
+
+.projects .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.projects .box .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.projects .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.desc span {
+    color: #efdf34;
+}
+
+.projects .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.projects .box .desc {
+    padding: 1rem;
+    text-align: center;
+}
+
+.projects .box .desc h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.projects .box .desc p {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.projects .box .desc .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #444;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.projects .box .desc .btn:hover {
+    background: #666;
+}
