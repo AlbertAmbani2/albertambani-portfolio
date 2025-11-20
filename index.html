@@ -13,6 +13,16 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -256,13 +266,14 @@
                 </div>
                 <div class="desc">
                     <h2>Kwetuevents</h2>
-                    <p class="desc">Book events and plan budget for your guests. <span>React</span> + <span>Vite</span>
+                    <p class="desc">Manage and plan budget for your guests inattendance. <span>React</span> +
+                        <span>Vite</span>
                         + <span>TypeScript</span></p>
-                    <a href="https://github.com/AlbertAmbani2/project1" target="_blank" class="btn">View on GitHub</a>
+                    <a href="https://kwetu-events.vercel.app/" target="_blank" class="btn">View on web</a>
                 </div>
             </div>
 
-            <div class="box" data-aos="fade-right">
+            <!-- <div class="box" data-aos="fade-right">
                 <div class="image">
                     <img src="images/project2.jpg" alt="Project 2">
                 </div>
@@ -271,9 +282,9 @@
                     <p class="desc">An electronic app for displaying services offered. <span>HTML</span> +
                         <span>CSS</span>
                     </p>
-                    <a href="...." target="_blank" class="btn">View on GitHub</a>
+                    <a href="...." target="_blank" class="btn">View on web</a>
                 </div>
-            </div>
+            </div> -->
 
             <div class="box" data-aos="fade-left">
                 <div class="image">
@@ -282,7 +293,7 @@
                 <div class="desc">
                     <h2>TaskApp</h2>
                     <p class="desc">Company app for managing employees. <span>React</span> + <span>TypeScript</span></p>
-                    <a href="https://task-port-hazel.vercel.app/" target="_blank" class="btn">View on GitHub</a>
+                    <a href="https://task-port-hazel.vercel.app/" target="_blank" class="btn">View on web</a>
                 </div>
             </div>
         </div>
@@ -329,15 +340,14 @@
 
 
 
-        <form data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" id="contact-form"
-            onsubmit="sendEmail(); reset(); return false; ">
+        <form data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" id="contact-form">
 
-            <input type="text" placeholder="name" class="box">
-            <input id="email" type="text" placeholder="email" class="box">
-            <input type="text" placeholder="Phone number" class="box">
+            <input type="text" id="name" placeholder="name" class="box">
+            <input id="email" type="email" placeholder="email" class="box">
+            <input type="text" id="subject" placeholder="subject" class="box" required>
             <textarea name="" id="message" cols="30" rows="10" placeholder="message" class="box message"></textarea>
-            <button type="submit" class="btn">send <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    viewBox="0 0 16 16">
+            <button type="submit" class="btn" onclick="sendMail()">send <svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" viewBox="0 0 16 16">
                     <path fill="#aaa"
                         d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576L6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76l7.494-7.493Z" />
                 </svg> </button>
