@@ -12,6 +12,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Mobile menu toggle functionality
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const sidebarMenu = document.getElementById('sidebarMenu');
+
+if (mobileMenuToggle && sidebarMenu) {
+    mobileMenuToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        sidebarMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!sidebarMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+            sidebarMenu.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking on a link
+    const sidebarLinks = sidebarMenu.querySelectorAll('a');
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            sidebarMenu.classList.remove('active');
+        });
+    });
+}
+
 // Email form submission
 const emailForm = document.querySelector('.email-form');
 if (emailForm) {
@@ -34,23 +60,6 @@ window.addEventListener('scroll', function () {
         header.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.05)';
     }
 });
-
-// Play button functionality
-const playButton = document.querySelector('.play-button');
-if (playButton) {
-    playButton.addEventListener('click', function () {
-        alert('Video player would open here');
-    });
-}
-//   if (!ageEl) return; // element not present in DOM
-
-//   const birthYear = 1999;
-//   const currentYear = new Date().getFullYear();
-//   const age = currentYear - birthYear;
-
-//   ageEl.innerHTML += age;
-// }
-// updateAge();
 
 //function to send e-email
 function sendMail() {
